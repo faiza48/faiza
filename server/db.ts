@@ -41,7 +41,7 @@ export function createInitialSeedState(): DailyraState {
       id: adminId,
       name: 'Sarah Wilson',
       firstName: 'Sarah',
-      email: process.env.ADMIN_EMAIL || 'sarah.wilson@dailyra.com',
+      email: process.env.ADMIN_EMAIL || 'girlsigma611@gmail.com',
       phone: '+1 (415) 890-4321',
       dateOfBirth: '1991-04-15',
       avatar: 'sarah',
@@ -930,8 +930,8 @@ export function loadDatabase(): PersistedDatabase {
     }
   }
 
-  const initialEmail = (process.env.ADMIN_EMAIL || 'sarah.wilson@dailyra.com').toLowerCase().trim();
-  const initialPassword = process.env.ADMIN_INITIAL_PASSWORD || 'Dailyra2025!Secure';
+  const initialEmail = (process.env.ADMIN_EMAIL || 'girlsigma611@gmail.com').toLowerCase().trim();
+  const initialPassword = process.env.ADMIN_INITIAL_PASSWORD || '@faiza2299';
   const { hash, salt } = hashPassword(initialPassword);
 
   const initialDb: PersistedDatabase = {

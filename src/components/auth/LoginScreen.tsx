@@ -11,11 +11,11 @@ interface LoginScreenProps {
 }
 
 export const LoginScreen: React.FC<LoginScreenProps> = ({
-  defaultEmailHint = 'sarah.wilson@dailyra.com',
+  defaultEmailHint = 'girlsigma611@gmail.com',
   onLoginSuccess,
 }) => {
   const [email, setEmail] = useState(defaultEmailHint);
-  const [password, setPassword] = useState('Dailyra2025!Secure');
+  const [password, setPassword] = useState('@faiza2299');
   const [rememberMe, setRememberMe] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -169,7 +169,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
                     autoComplete="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="sarah.wilson@dailyra.com"
+                    placeholder="girlsigma611@gmail.com"
                     className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#F8F6F1] border border-[#E2DDD2] text-sm text-[#1F2421] placeholder-[#9BA29D] focus:outline-none focus:border-[#234732] focus:bg-white transition-colors"
                   />
                 </div>
@@ -246,8 +246,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
               <button
                 type="button"
                 onClick={() => {
-                  setEmail('sarah.wilson@dailyra.com');
-                  setPassword('Dailyra2025!Secure');
+                  setEmail('girlsigma611@gmail.com');
+                  setPassword('@faiza2299');
                 }}
                 className="text-[#234732] font-medium hover:underline"
               >

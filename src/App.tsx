@@ -28,7 +28,7 @@ import {
 export default function App() {
   const [authChecking, setAuthChecking] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [adminEmailHint, setAdminEmailHint] = useState('sarah.wilson@dailyra.com');
+  const [adminEmailHint, setAdminEmailHint] = useState('girlsigma611@gmail.com');
   const [state, setState] = useState<DailyraState | null>(null);
   const [loadingData, setLoadingData] = useState(false);
 

@@ -1,0 +1,996 @@
+{
+  "auth": {
+    "adminId": "admin-sarah-wilson",
+    "email": "girlsigma611@gmail.com",
+    "passwordHash": "4a6735f5906d7dda5045f9fb1bb5b54d391ef3eb10f04a53534178f211f695ab5cf14f17e4962bb2d951bde40792cee422927f3ecd86256d4e9f8a2aa7ff765f",
+    "passwordSalt": "ad571a7b0357a4095251250dcf2d9d00",
+    "recoveryPin": "1991-04-15",
+    "updatedAt": "2026-10-02T15:35:00.000Z"
+  },
+  "state": {
+    "profile": {
+      "id": "admin-sarah-wilson",
+      "name": "Sarah Wilson",
+      "firstName": "Sarah",
+      "email": "girlsigma611@gmail.com",
+      "phone": "+1 (415) 890-4321",
+      "dateOfBirth": "1991-04-15",
+      "avatar": "sarah",
+      "planLabel": "Premium",
+      "preferredCurrency": "USD",
+      "currencySymbol": "$",
+      "timezone": "America/Los_Angeles (PT)",
+      "country": "United States",
+      "motivationalQuote": "Small steps every day lead to big dreams.",
+      "sidebarQuote": "A better tomorrow starts with an organized today."
+    },
+    "tasks": [
+      {
+        "id": "task-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Pick up Emma from Oakridge Elementary",
+        "description": "Collect Emma at the main gate after art club and bring her violin folder.",
+        "category": "Family",
+        "priority": "High",
+        "dueDate": "2025-10-12",
+        "dueTime": "03:00 PM",
+        "location": "School",
+        "repeat": "Daily",
+        "reminder": "15 mins before",
+        "notes": "Remember to sign the permission slip for the autumn botanical garden trip.",
+        "status": "Pending",
+        "familyMemberId": "fam-emma",
+        "isScheduleItem": true,
+        "createdAt": "2025-10-10T08:00:00Z"
+      },
+      {
+        "id": "task-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Pay electricity bill",
+        "description": "Monthly Pacific Gas & Electric utility bill settlement ($180).",
+        "category": "Bills",
+        "priority": "High",
+        "dueDate": "2025-10-12",
+        "dueTime": "05:00 PM",
+        "location": "Home",
+        "repeat": "Monthly",
+        "reminder": "2 days before",
+        "notes": "Auto-linked to monthly utilities budget.",
+        "status": "Pending",
+        "createdAt": "2025-10-08T10:00:00Z"
+      },
+      {
+        "id": "task-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Review Q4 household budget & savings allocation",
+        "description": "Verify monthly automated transfer to Family Emergency & Education Savings.",
+        "category": "Finance",
+        "priority": "Medium",
+        "dueDate": "2025-10-12",
+        "dueTime": "07:00 PM",
+        "location": "Home Office",
+        "repeat": "Monthly",
+        "reminder": "1 day before",
+        "notes": "Check vanguard deposit confirmation.",
+        "status": "Pending",
+        "createdAt": "2025-10-09T11:30:00Z"
+      },
+      {
+        "id": "task-4",
+        "adminId": "admin-sarah-wilson",
+        "title": "Order Mom’s birthday floral arrangement & gift box",
+        "description": "White garden roses, eucalyptus bouquet, and cashmere wrap for Oct 18.",
+        "category": "Family",
+        "priority": "Medium",
+        "dueDate": "2025-10-12",
+        "dueTime": "04:30 PM",
+        "location": "Boutique / Online",
+        "repeat": "Yearly",
+        "reminder": "2 days before",
+        "notes": "Deliver on Saturday morning before 10:00 AM.",
+        "status": "Pending",
+        "familyMemberId": "fam-mom",
+        "createdAt": "2025-10-10T14:00:00Z"
+      },
+      {
+        "id": "task-5",
+        "adminId": "admin-sarah-wilson",
+        "title": "Morning organic grocery restock",
+        "description": "Fresh milk, pasture-raised eggs, seasonal fruits, and sourdough bread.",
+        "category": "Shopping",
+        "priority": "Low",
+        "dueDate": "2025-10-12",
+        "dueTime": "09:00 AM",
+        "location": "Whole Foods Market",
+        "repeat": "Weekly",
+        "reminder": "None",
+        "notes": "Completed earlier this morning.",
+        "status": "Completed",
+        "createdAt": "2025-10-11T09:00:00Z"
+      },
+      {
+        "id": "task-6",
+        "adminId": "admin-sarah-wilson",
+        "title": "Prepare Adam’s pediatric checkup immunization booklet",
+        "description": "Gather vaccination records and growth chart ahead of Dr. Bennett visit.",
+        "category": "Health",
+        "priority": "Medium",
+        "dueDate": "2025-10-15",
+        "dueTime": "11:00 AM",
+        "location": "Home",
+        "repeat": "None",
+        "reminder": "1 day before",
+        "notes": "Stored in Family Documents vault.",
+        "status": "In Progress",
+        "familyMemberId": "fam-adam",
+        "createdAt": "2025-10-11T16:00:00Z"
+      }
+    ],
+    "transactions": [
+      {
+        "id": "tx-1",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Food",
+        "amount": 125,
+        "date": "2025-10-12",
+        "paymentMethod": "Credit Card",
+        "description": "Grocery Store",
+        "notes": "Weekly organic produce, milk, eggs, and pantry essentials (Today)"
+      },
+      {
+        "id": "tx-2",
+        "adminId": "admin-sarah-wilson",
+        "type": "income",
+        "category": "Salary",
+        "amount": 4000,
+        "date": "2025-10-11",
+        "paymentMethod": "Bank",
+        "description": "Salary",
+        "notes": "Monthly executive design director direct deposit (Yesterday)",
+        "isRecurring": true,
+        "recurringFrequency": "Monthly"
+      },
+      {
+        "id": "tx-3",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Bills",
+        "amount": 180,
+        "date": "2025-10-10",
+        "paymentMethod": "Bank",
+        "description": "Electricity Bill",
+        "notes": "Monthly home energy & solar grid utility bill (Oct 10)",
+        "isRecurring": true,
+        "recurringFrequency": "Monthly"
+      },
+      {
+        "id": "tx-4",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Health",
+        "amount": 45,
+        "date": "2025-10-08",
+        "paymentMethod": "Debit Card",
+        "description": "Pharmacy",
+        "notes": "Daily vitamins, children allergy drops, and first-aid kit (Oct 8)"
+      },
+      {
+        "id": "tx-5",
+        "adminId": "admin-sarah-wilson",
+        "type": "income",
+        "category": "Freelance",
+        "amount": 800,
+        "date": "2025-10-05",
+        "paymentMethod": "Bank",
+        "description": "Editorial Brand Advisory Retainer",
+        "notes": "Monthly creative direction advisory fee",
+        "isRecurring": true,
+        "recurringFrequency": "Monthly"
+      },
+      {
+        "id": "tx-6",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Food",
+        "amount": 557,
+        "date": "2025-10-06",
+        "paymentMethod": "Credit Card",
+        "description": "Farmers Market & Family Dining",
+        "notes": "Bi-weekly fresh groceries, school lunches, and Friday family dinner"
+      },
+      {
+        "id": "tx-7",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Home",
+        "amount": 447,
+        "date": "2025-10-03",
+        "paymentMethod": "Bank",
+        "description": "Home Maintenance & Garden Care",
+        "notes": "Autumn landscaping, water filtration service, and linen care",
+        "isRecurring": true,
+        "recurringFrequency": "Monthly"
+      },
+      {
+        "id": "tx-8",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Transport",
+        "amount": 320,
+        "date": "2025-10-04",
+        "paymentMethod": "Credit Card",
+        "description": "EV Charging & Commute Pass",
+        "notes": "Monthly vehicle charging, bridge tolls, and city parking"
+      },
+      {
+        "id": "tx-9",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Family",
+        "amount": 243,
+        "date": "2025-10-02",
+        "paymentMethod": "Debit Card",
+        "description": "Emma Swimming & Adam Soccer Club",
+        "notes": "Monthly youth academy tuition and activity supplies",
+        "familyMemberId": "fam-emma"
+      },
+      {
+        "id": "tx-10",
+        "adminId": "admin-sarah-wilson",
+        "type": "expense",
+        "category": "Shopping",
+        "amount": 213,
+        "date": "2025-10-01",
+        "paymentMethod": "Credit Card",
+        "description": "Autumn Wardrobe & Kids Books",
+        "notes": "Knitwear, school reading list books, and stationery"
+      }
+    ],
+    "budgets": [
+      {
+        "id": "b-total",
+        "adminId": "admin-sarah-wilson",
+        "category": "Monthly Total",
+        "limitAmount": 2800,
+        "month": "2025-10"
+      },
+      {
+        "id": "b-food",
+        "adminId": "admin-sarah-wilson",
+        "category": "Food",
+        "limitAmount": 800,
+        "month": "2025-10"
+      },
+      {
+        "id": "b-home",
+        "adminId": "admin-sarah-wilson",
+        "category": "Home",
+        "limitAmount": 550,
+        "month": "2025-10"
+      },
+      {
+        "id": "b-transport",
+        "adminId": "admin-sarah-wilson",
+        "category": "Transport",
+        "limitAmount": 400,
+        "month": "2025-10"
+      },
+      {
+        "id": "b-family",
+        "adminId": "admin-sarah-wilson",
+        "category": "Family",
+        "limitAmount": 350,
+        "month": "2025-10"
+      },
+      {
+        "id": "b-shopping",
+        "adminId": "admin-sarah-wilson",
+        "category": "Shopping",
+        "limitAmount": 300,
+        "month": "2025-10"
+      },
+      {
+        "id": "b-bills",
+        "adminId": "admin-sarah-wilson",
+        "category": "Bills",
+        "limitAmount": 220,
+        "month": "2025-10"
+      },
+      {
+        "id": "b-health",
+        "adminId": "admin-sarah-wilson",
+        "category": "Health",
+        "limitAmount": 180,
+        "month": "2025-10"
+      }
+    ],
+    "savingsGoals": [
+      {
+        "id": "sg-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Family Emergency Reserve",
+        "targetAmount": 15000,
+        "currentAmount": 12450,
+        "targetDate": "2026-03-01",
+        "notes": "6-month core household safety net in high-yield treasury account."
+      },
+      {
+        "id": "sg-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Emma & Adam Education Fund",
+        "targetAmount": 25000,
+        "currentAmount": 16800,
+        "targetDate": "2028-09-01",
+        "notes": "529 education portfolio contribution ($500/month automatic)."
+      },
+      {
+        "id": "sg-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Summer Kyoto & Alpine Retreat",
+        "targetAmount": 6500,
+        "currentAmount": 4200,
+        "targetDate": "2026-07-15",
+        "notes": "Family summer travel fund."
+      }
+    ],
+    "familyMembers": [
+      {
+        "id": "fam-emma",
+        "adminId": "admin-sarah-wilson",
+        "name": "Emma",
+        "photo": "emma",
+        "relationship": "Daughter",
+        "dateOfBirth": "2017-03-12",
+        "ageText": "8 years • Mar 12",
+        "cardTone": "blush",
+        "schoolInfo": "Oakridge Elementary School • Room 204 (Ms. Clara Vance)",
+        "gradeOrRole": "3rd Grade",
+        "allergiesOrMedical": "Mild seasonal pollen sensitivity; no food allergies.",
+        "doctorName": "Dr. Julian Bennett (Pediatrics)",
+        "emergencyContact": "Sarah Wilson • +1 (415) 890-4321",
+        "notes": "Loves watercolor painting, violin lessons on Tuesdays, and swimming club on Thursdays.",
+        "activities": [
+          {
+            "id": "act-1",
+            "familyMemberId": "fam-emma",
+            "title": "Pick up Emma from School",
+            "category": "School",
+            "date": "2025-10-12",
+            "time": "03:00 PM",
+            "location": "Oakridge Elementary North Gate",
+            "notes": "Daily school dismissal pickup."
+          },
+          {
+            "id": "act-2",
+            "familyMemberId": "fam-emma",
+            "title": "Parent-Teacher Autumn Conference",
+            "category": "School",
+            "date": "2025-10-14",
+            "time": "03:00 PM",
+            "location": "Oakridge Elementary Room 204",
+            "notes": "Review reading portfolio and autumn science project."
+          },
+          {
+            "id": "act-3",
+            "familyMemberId": "fam-emma",
+            "title": "Junior Dolphins Swimming Class",
+            "category": "Activities",
+            "date": "2025-10-16",
+            "time": "04:30 PM",
+            "location": "Greenwood Aquatic Center",
+            "notes": "Bring goggles, swim cap, and warm towel."
+          },
+          {
+            "id": "act-4",
+            "familyMemberId": "fam-emma",
+            "title": "Annual Pediatric Wellness & Dental Checkup",
+            "category": "Health",
+            "date": "2025-10-22",
+            "time": "10:00 AM",
+            "location": "Pacific Family Health Clinic",
+            "notes": "Routine wellness check and flu booster."
+          }
+        ]
+      },
+      {
+        "id": "fam-adam",
+        "adminId": "admin-sarah-wilson",
+        "name": "Adam",
+        "photo": "adam",
+        "relationship": "Son",
+        "dateOfBirth": "2020-07-28",
+        "ageText": "5 years • Jul 28",
+        "cardTone": "sky",
+        "schoolInfo": "Little Oaks Montessori Kindergarten • Sunflower Group",
+        "gradeOrRole": "Kindergarten",
+        "allergiesOrMedical": "No known allergies; blood type O+.",
+        "doctorName": "Dr. Julian Bennett (Pediatrics)",
+        "emergencyContact": "Sarah Wilson • +1 (415) 890-4321",
+        "notes": "Curious about dinosaurs, wooden puzzles, and Saturday morning mini-soccer.",
+        "activities": [
+          {
+            "id": "act-5",
+            "familyMemberId": "fam-adam",
+            "title": "Saturday Morning Mini-Soccer Practice",
+            "category": "Activities",
+            "date": "2025-10-18",
+            "time": "09:30 AM",
+            "location": "Meadowbrook Park Field 2",
+            "notes": "Green jersey and shin guards."
+          },
+          {
+            "id": "act-6",
+            "familyMemberId": "fam-adam",
+            "title": "Kindergarten Autumn Leaf Show & Tell",
+            "category": "School",
+            "date": "2025-10-17",
+            "time": "10:30 AM",
+            "location": "Little Oaks Montessori",
+            "notes": "Pack pressed maple leaves book."
+          },
+          {
+            "id": "act-7",
+            "familyMemberId": "fam-adam",
+            "title": "5-Year Immunization & Growth Review",
+            "category": "Health",
+            "date": "2025-10-22",
+            "time": "10:30 AM",
+            "location": "Pacific Family Health Clinic",
+            "notes": "Scheduled right after Emma’s appointment."
+          }
+        ]
+      },
+      {
+        "id": "fam-mom",
+        "adminId": "admin-sarah-wilson",
+        "name": "Eleanor Wilson",
+        "photo": "sarah",
+        "relationship": "Mother",
+        "dateOfBirth": "1963-10-18",
+        "ageText": "62 years • Oct 18",
+        "cardTone": "sage",
+        "schoolInfo": "Retired Botanical Illustrator & Master Gardener",
+        "gradeOrRole": "Grandmother",
+        "allergiesOrMedical": "Penicillin sensitivity; daily blood pressure maintenance.",
+        "doctorName": "Dr. Helena Vance (Internal Medicine)",
+        "emergencyContact": "Sarah Wilson • +1 (415) 890-4321",
+        "notes": "Birthday celebration dinner on October 18 at 6:30 PM.",
+        "activities": [
+          {
+            "id": "act-8",
+            "familyMemberId": "fam-mom",
+            "title": "Mom’s Birthday Celebration Dinner",
+            "category": "Important Date",
+            "date": "2025-10-18",
+            "time": "All Day",
+            "location": "Family Garden Conservatory",
+            "notes": "Emma & Adam made handmade botanical birthday cards."
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "id": "ev-sched-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Breakfast",
+        "date": "2025-10-12",
+        "startTime": "08:00 AM",
+        "endTime": "08:45 AM",
+        "location": "Home",
+        "description": "Warm oatmeal, fresh berries, and family morning check-in.",
+        "category": "Personal",
+        "reminder": "At time",
+        "repeat": "Daily",
+        "isScheduleSlot": true,
+        "dotColor": "green"
+      },
+      {
+        "id": "ev-sched-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Work",
+        "date": "2025-10-12",
+        "startTime": "09:30 AM",
+        "endTime": "12:15 PM",
+        "location": "Office",
+        "description": "Deep focus design review and product architecture planning.",
+        "category": "Work",
+        "reminder": "15 mins before",
+        "repeat": "Daily",
+        "isScheduleSlot": true,
+        "dotColor": "coral"
+      },
+      {
+        "id": "ev-sched-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Lunch with Amina",
+        "date": "2025-10-12",
+        "startTime": "12:30 PM",
+        "endTime": "01:45 PM",
+        "location": "Cafe",
+        "description": "Catch-up lunch at Olive & Thyme Botanical Cafe.",
+        "category": "Personal",
+        "reminder": "30 mins before",
+        "repeat": "None",
+        "isScheduleSlot": true,
+        "dotColor": "purple"
+      },
+      {
+        "id": "ev-sched-4",
+        "adminId": "admin-sarah-wilson",
+        "title": "Pick up Emma",
+        "date": "2025-10-12",
+        "startTime": "03:00 PM",
+        "endTime": "03:45 PM",
+        "location": "School",
+        "description": "Afternoon school pickup at Oakridge Elementary.",
+        "category": "School",
+        "reminder": "15 mins before",
+        "repeat": "Daily",
+        "familyMemberId": "fam-emma",
+        "isScheduleSlot": true,
+        "dotColor": "amber"
+      },
+      {
+        "id": "ev-sched-5",
+        "adminId": "admin-sarah-wilson",
+        "title": "Gym",
+        "date": "2025-10-12",
+        "startTime": "06:00 PM",
+        "endTime": "07:15 PM",
+        "location": "Fitness Center",
+        "description": "Pilates & mobility session at Veridian Wellness Studio.",
+        "category": "Health",
+        "reminder": "30 mins before",
+        "repeat": "Weekly",
+        "isScheduleSlot": true,
+        "dotColor": "blue"
+      },
+      {
+        "id": "ev-sched-6",
+        "adminId": "admin-sarah-wilson",
+        "title": "Family Time",
+        "date": "2025-10-12",
+        "startTime": "08:00 PM",
+        "endTime": "09:30 PM",
+        "location": "Home",
+        "description": "Storytime with Emma & Adam, chamomile tea, and evening wind-down.",
+        "category": "Family",
+        "reminder": "None",
+        "repeat": "Daily",
+        "isScheduleSlot": true,
+        "dotColor": "green"
+      },
+      {
+        "id": "ev-up-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Parent Meeting",
+        "date": "2025-10-14",
+        "startTime": "3:00 PM",
+        "endTime": "4:00 PM",
+        "location": "School",
+        "description": "Autumn parent-teacher conference with Ms. Clara Vance.",
+        "category": "School",
+        "reminder": "1 day before",
+        "repeat": "None",
+        "familyMemberId": "fam-emma"
+      },
+      {
+        "id": "ev-up-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Mom's Birthday",
+        "date": "2025-10-18",
+        "startTime": "All Day",
+        "endTime": "All Day",
+        "location": "Family Home",
+        "description": "Celebration brunch and garden dinner for Eleanor’s 62nd birthday.",
+        "category": "Family",
+        "reminder": "2 days before",
+        "repeat": "Yearly",
+        "familyMemberId": "fam-mom"
+      },
+      {
+        "id": "ev-up-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Doctor Appointment",
+        "date": "2025-10-22",
+        "startTime": "10:00 AM",
+        "endTime": "11:15 AM",
+        "location": "Health",
+        "description": "Annual pediatric checkup with Dr. Julian Bennett.",
+        "category": "Health",
+        "reminder": "1 day before",
+        "repeat": "None",
+        "familyMemberId": "fam-emma"
+      }
+    ],
+    "reminders": [
+      {
+        "id": "rem-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Medicine",
+        "time": "8:00 AM",
+        "date": "2025-10-12",
+        "repeat": "Daily",
+        "category": "Health",
+        "enabled": true,
+        "notificationSetting": "Push & Sound"
+      },
+      {
+        "id": "rem-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Wake up",
+        "time": "7:00 AM",
+        "date": "2025-10-12",
+        "repeat": "Daily",
+        "category": "Routine",
+        "enabled": true,
+        "notificationSetting": "Push & Sound"
+      },
+      {
+        "id": "rem-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Kids bedtime",
+        "time": "10:00 PM",
+        "date": "2025-10-12",
+        "repeat": "Daily",
+        "category": "Family",
+        "familyMemberId": "fam-emma",
+        "enabled": true,
+        "notificationSetting": "Banner Only"
+      },
+      {
+        "id": "rem-4",
+        "adminId": "admin-sarah-wilson",
+        "title": "Pay electricity bill ($180)",
+        "time": "5:00 PM",
+        "date": "2025-10-12",
+        "repeat": "Monthly",
+        "category": "Bills",
+        "relatedTaskId": "task-2",
+        "enabled": true,
+        "notificationSetting": "Push & Sound"
+      },
+      {
+        "id": "rem-5",
+        "adminId": "admin-sarah-wilson",
+        "title": "Water olive & eucalyptus indoor plants",
+        "time": "6:30 PM",
+        "date": "2025-10-15",
+        "repeat": "Weekly",
+        "category": "Routine",
+        "enabled": true,
+        "notificationSetting": "Silent Notification"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Shopping list",
+        "content": "Weekly kitchen & organic market essentials",
+        "type": "checklist",
+        "category": "Shopping List",
+        "checklistItems": [
+          {
+            "id": "ci-1",
+            "text": "Milk",
+            "completed": false
+          },
+          {
+            "id": "ci-2",
+            "text": "Eggs",
+            "completed": false
+          },
+          {
+            "id": "ci-3",
+            "text": "Fruits",
+            "completed": false
+          },
+          {
+            "id": "ci-4",
+            "text": "Sourdough Bread",
+            "completed": true
+          }
+        ],
+        "pinned": true,
+        "archived": false,
+        "updatedAt": "2025-10-12T08:30:00Z",
+        "colorTone": "cream"
+      },
+      {
+        "id": "note-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Ideas",
+        "content": "Business ideas... Curated botanical stationery collection & calm digital workspace journal.",
+        "type": "text",
+        "category": "Ideas",
+        "checklistItems": [],
+        "pinned": true,
+        "archived": false,
+        "updatedAt": "2025-10-11T19:15:00Z",
+        "colorTone": "sage"
+      },
+      {
+        "id": "note-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Work notes",
+        "content": "Meeting points... Finalize Q4 design system tokens, review typography scale, and approve quarterly roadmap.",
+        "type": "text",
+        "category": "Work Notes",
+        "checklistItems": [],
+        "pinned": true,
+        "archived": false,
+        "updatedAt": "2025-10-11T14:20:00Z",
+        "colorTone": "blush"
+      },
+      {
+        "id": "note-4",
+        "adminId": "admin-sarah-wilson",
+        "title": "Emma & Adam Autumn Schedule Notes",
+        "content": "Emma has violin on Tuesdays (4:00 PM) and swimming on Thursdays (4:30 PM). Adam needs his green soccer jersey washed every Friday evening.",
+        "type": "text",
+        "category": "Family Notes",
+        "checklistItems": [],
+        "pinned": false,
+        "archived": false,
+        "updatedAt": "2025-10-09T17:00:00Z",
+        "colorTone": "sky"
+      }
+    ],
+    "importantDates": [
+      {
+        "id": "id-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Mom's Birthday",
+        "personOrEvent": "Eleanor Wilson",
+        "type": "Birthday",
+        "date": "2025-10-18",
+        "recurringYearly": true,
+        "reminderDaysBefore": 5,
+        "familyMemberId": "fam-mom",
+        "notes": "62nd Birthday — Garden conservatory dinner & cashmere wrap gift."
+      },
+      {
+        "id": "id-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Emma's Birthday",
+        "personOrEvent": "Emma Wilson",
+        "type": "Birthday",
+        "date": "2026-03-12",
+        "recurringYearly": true,
+        "reminderDaysBefore": 14,
+        "familyMemberId": "fam-emma",
+        "notes": "Turning 9 — Botanical art party with school friends."
+      },
+      {
+        "id": "id-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Adam's Birthday",
+        "personOrEvent": "Adam Wilson",
+        "type": "Birthday",
+        "date": "2026-07-28",
+        "recurringYearly": true,
+        "reminderDaysBefore": 14,
+        "familyMemberId": "fam-adam",
+        "notes": "Turning 6 — Picnic at Golden Gate Park."
+      },
+      {
+        "id": "id-4",
+        "adminId": "admin-sarah-wilson",
+        "title": "Home Insurance & Umbrella Policy Renewal",
+        "personOrEvent": "Chubb Private Client Policy",
+        "type": "Renewal",
+        "date": "2025-11-01",
+        "recurringYearly": true,
+        "reminderDaysBefore": 10,
+        "notes": "Review annual coverage summary in Documents vault."
+      }
+    ],
+    "documents": [
+      {
+        "id": "doc-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Sarah Wilson — US Passport (Biometric)",
+        "fileName": "sarah_wilson_passport_2024.pdf",
+        "category": "Personal",
+        "fileType": "PDF",
+        "fileSize": "1.8 MB",
+        "uploadedAt": "2025-09-14",
+        "expiryDate": "2034-05-20",
+        "notes": "Passport #A984****21. Stored in encrypted personal vault."
+      },
+      {
+        "id": "doc-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Emma & Adam — Immunization & Pediatric Records",
+        "fileName": "children_immunization_records_2025.pdf",
+        "category": "Health",
+        "fileType": "PDF",
+        "fileSize": "2.4 MB",
+        "uploadedAt": "2025-10-01",
+        "familyMemberId": "fam-emma",
+        "notes": "Official California school & pediatric vaccination certificates."
+      },
+      {
+        "id": "doc-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Oakridge Elementary — 2025/2026 Academic Calendar & Handbook",
+        "fileName": "oakridge_elementary_handbook.pdf",
+        "category": "Family",
+        "fileType": "PDF",
+        "fileSize": "3.1 MB",
+        "uploadedAt": "2025-09-02",
+        "familyMemberId": "fam-emma",
+        "notes": "Term dates, parent conference schedule, and emergency contacts."
+      },
+      {
+        "id": "doc-4",
+        "adminId": "admin-sarah-wilson",
+        "title": "Comprehensive Home & Family Trust Deed Summary",
+        "fileName": "wilson_family_trust_summary_2025.pdf",
+        "category": "Financial",
+        "fileType": "PDF",
+        "fileSize": "4.2 MB",
+        "uploadedAt": "2025-08-19",
+        "notes": "Private estate planning, property deed, and insurance schedule."
+      }
+    ],
+    "healthRecords": [
+      {
+        "id": "hr-1",
+        "adminId": "admin-sarah-wilson",
+        "type": "Appointment",
+        "title": "Doctor Appointment — Annual Pediatric Checkup",
+        "date": "2025-10-22",
+        "time": "10:00 AM",
+        "providerOrLocation": "Dr. Julian Bennett • Pacific Family Health Clinic",
+        "familyMemberId": "fam-emma",
+        "personName": "Emma",
+        "dosageOrDetails": "Annual physical growth assessment & vision screening",
+        "notes": "Bring updated immunization folder from Documents.",
+        "reminderEnabled": true,
+        "status": "Upcoming"
+      },
+      {
+        "id": "hr-2",
+        "adminId": "admin-sarah-wilson",
+        "type": "Medication",
+        "title": "Daily Vitamin D3 + Omega-3 Supplement",
+        "date": "2025-10-12",
+        "time": "08:00 AM",
+        "providerOrLocation": "Home Morning Routine",
+        "personName": "Sarah Wilson",
+        "dosageOrDetails": "2000 IU Vitamin D3 with breakfast",
+        "notes": "Linked to 8:00 AM daily medicine reminder.",
+        "reminderEnabled": true,
+        "status": "Active"
+      },
+      {
+        "id": "hr-3",
+        "adminId": "admin-sarah-wilson",
+        "type": "Vaccination",
+        "title": "Seasonal Influenza & DTaP Booster Record",
+        "date": "2025-09-15",
+        "time": "11:00 AM",
+        "providerOrLocation": "Pacific Family Health Clinic",
+        "familyMemberId": "fam-adam",
+        "personName": "Adam",
+        "dosageOrDetails": "Lot #FL-2025-88A • Completed without reaction",
+        "notes": "Next routine pediatric checkup on October 22.",
+        "reminderEnabled": false,
+        "status": "Completed"
+      }
+    ],
+    "notifications": [
+      {
+        "id": "notif-1",
+        "adminId": "admin-sarah-wilson",
+        "title": "Bill Reminder",
+        "message": "Electricity bill ($180) is due today at 5:00 PM.",
+        "timestamp": "25 mins ago",
+        "category": "Bills",
+        "read": false,
+        "targetSection": "finance"
+      },
+      {
+        "id": "notif-2",
+        "adminId": "admin-sarah-wilson",
+        "title": "Upcoming Family Birthday",
+        "message": "Mom's birthday is in 6 days (Oct 18).",
+        "timestamp": "2 hours ago",
+        "category": "Family",
+        "read": false,
+        "targetSection": "family"
+      },
+      {
+        "id": "notif-3",
+        "adminId": "admin-sarah-wilson",
+        "title": "Today's Tasks",
+        "message": "You have 4 tasks remaining on your schedule today.",
+        "timestamp": "3 hours ago",
+        "category": "Tasks",
+        "read": false,
+        "targetSection": "tasks"
+      },
+      {
+        "id": "notif-4",
+        "adminId": "admin-sarah-wilson",
+        "title": "Budget Threshold Notice",
+        "message": "Food budget is 85% used ($682 of $800) this month.",
+        "timestamp": "Yesterday",
+        "category": "Finance",
+        "read": true,
+        "targetSection": "finance"
+      }
+    ],
+    "settings": {
+      "adminId": "admin-sarah-wilson",
+      "appearance": "light",
+      "hideBalanceByDefault": false,
+      "emailNotifications": true,
+      "billAlerts": true,
+      "birthdayReminders": true,
+      "budgetWarningThreshold": 80,
+      "sessionTimeoutMinutes": 120,
+      "privacyMaskMode": false,
+      "dashboardWidgets": [
+        {
+          "id": "kpi-cards",
+          "label": "Top Summary Metrics",
+          "visible": true,
+          "order": 1
+        },
+        {
+          "id": "schedule",
+          "label": "Today's Schedule",
+          "visible": true,
+          "order": 2
+        },
+        {
+          "id": "finance",
+          "label": "Finance Overview",
+          "visible": true,
+          "order": 3
+        },
+        {
+          "id": "calendar",
+          "label": "Mini Calendar",
+          "visible": true,
+          "order": 4
+        },
+        {
+          "id": "transactions",
+          "label": "Recent Transactions",
+          "visible": true,
+          "order": 5
+        },
+        {
+          "id": "family",
+          "label": "Family Profiles",
+          "visible": true,
+          "order": 6
+        },
+        {
+          "id": "events",
+          "label": "Upcoming Events",
+          "visible": true,
+          "order": 7
+        },
+        {
+          "id": "notes",
+          "label": "Quick Notes",
+          "visible": true,
+          "order": 8
+        },
+        {
+          "id": "quick-actions",
+          "label": "Quick Actions & Reminders Rail",
+          "visible": true,
+          "order": 9
+        }
+      ]
+    }
+  }
+}
