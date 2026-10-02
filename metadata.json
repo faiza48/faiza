@@ -1,0 +1,6 @@
+{
+  "name": "Dailyra — Personal Life OS",
+  "description": "Your Life. Every Day. A private, all-in-one personal life management dashboard for tasks, schedule, finance, family, calendar, reminders, notes, documents, and health.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
