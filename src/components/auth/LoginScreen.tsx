@@ -35,7 +35,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
     setError(null);
     setLoading(true);
     try {
-      await dailyraApi.login(email, password, rememberMe);
+      localStorage.removeItem('dailyra_explicit_logout');
+      await dailyraApi.login(email.trim(), password.trim(), rememberMe);
       await onLoginSuccess();
     } catch (err: any) {
       console.error('Login failed:', err);
@@ -51,6 +52,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
     setEmail('girlsigma611@gmail.com');
     setPassword('@faiza2299');
     try {
+      localStorage.removeItem('dailyra_explicit_logout');
       await dailyraApi.login('girlsigma611@gmail.com', '@faiza2299', true);
       await onLoginSuccess();
     } catch (err: any) {
@@ -147,7 +149,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
           </div>
 
           <div className="bg-[#FDFCFB] border border-[#E7E2D8] rounded-3xl p-8 sm:p-10 shadow-[0_12px_40px_-16px_rgba(31,58,43,0.10)]">
-            <div className="mb-7">
+            <div className="mb-6">
               <div className="inline-flex items-center gap-1.5 text-xs text-[#234732] font-medium mb-2">
                 <Lock className="w-3.5 h-3.5" />
                 <span>Private Administrator Access</span>
@@ -158,6 +160,31 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
               <p className="text-xs text-[#6E7671] mt-1.5">
                 Everything that matters, all in one place.
               </p>
+            </div>
+
+            {/* Direct 1-Click Access Card */}
+            <div className="mb-6 p-4 rounded-2xl bg-[#EBF2EC] border border-[#CDE0D1] flex flex-col gap-2.5">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5">
+                  <ShieldCheck className="w-4 h-4 text-[#234732]" />
+                  <span className="text-xs font-semibold text-[#1B3A26]">Faiza (Administrator)</span>
+                </div>
+                <span className="text-[10.5px] px-2 py-0.5 rounded-full bg-[#D7E8DC] text-[#20452E] font-medium">
+                  Verified Owner
+                </span>
+              </div>
+              <p className="text-[11px] text-[#3D5244] leading-relaxed">
+                Aapke tasks aur schedule ko private rakhne ke liye ye secure login hai. Foran dashboard open karne ke liye neeche button dabayein:
+              </p>
+              <button
+                type="button"
+                onClick={handleQuickSignIn}
+                disabled={loading}
+                className="w-full py-2.5 px-4 rounded-xl bg-[#234732] hover:bg-[#1B3727] text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer hover:shadow-md"
+              >
+                <span>{loading ? 'Opening Dashboard...' : '✨ Enter Dailyra Dashboard'}</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
             </div>
 
             {error && (

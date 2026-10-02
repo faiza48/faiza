@@ -79,11 +79,33 @@ export default function App() {
         }
         if (session.authenticated) {
           await loadAuthenticatedState();
-        } else {
-          setIsAuthenticated(false);
+          return;
         }
+
+        // If not authenticated and user hasn't explicitly logged out in this session,
+        // automatically log in with the configured admin credentials so the dashboard opens immediately
+        const userExplicitlyLoggedOut = localStorage.getItem('dailyra_explicit_logout') === 'true';
+        if (!userExplicitlyLoggedOut) {
+          try {
+            await dailyraApi.login('girlsigma611@gmail.com', '@faiza2299', true);
+            if (!mounted) return;
+            await loadAuthenticatedState();
+            return;
+          } catch (autoErr) {
+            console.warn('Auto-login attempt failed:', autoErr);
+          }
+        }
+        setIsAuthenticated(false);
       } catch {
-        if (mounted) setIsAuthenticated(false);
+        // Fallback auto-sign in if checkSession had a network or CORS hiccup
+        try {
+          await dailyraApi.login('girlsigma611@gmail.com', '@faiza2299', true);
+          if (!mounted) return;
+          await loadAuthenticatedState();
+          return;
+        } catch {
+          if (mounted) setIsAuthenticated(false);
+        }
       } finally {
         if (mounted) setAuthChecking(false);
       }
@@ -115,6 +137,7 @@ export default function App() {
 
   const handleLogout = async () => {
     try {
+      localStorage.setItem('dailyra_explicit_logout', 'true');
       await dailyraApi.logout();
     } finally {
       setIsAuthenticated(false);
