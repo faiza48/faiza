@@ -2,15 +2,21 @@ import type { DailyraState } from '../types/dailyra';
 
 const SESSION_TOKEN_KEY = 'dailyra_auth_token';
 
+let memorySessionToken: string | null = null;
+
 export function getStoredSessionToken(): string | null {
+  if (memorySessionToken) return memorySessionToken;
   try {
-    return localStorage.getItem(SESSION_TOKEN_KEY) || sessionStorage.getItem(SESSION_TOKEN_KEY);
+    const val = localStorage.getItem(SESSION_TOKEN_KEY) || sessionStorage.getItem(SESSION_TOKEN_KEY);
+    if (val) memorySessionToken = val;
+    return val;
   } catch {
-    return null;
+    return memorySessionToken;
   }
 }
 
 export function setStoredSessionToken(token: string | null, rememberMe = true): void {
+  memorySessionToken = token;
   try {
     if (!token) {
       localStorage.removeItem(SESSION_TOKEN_KEY);

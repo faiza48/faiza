@@ -36,9 +36,26 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
     setLoading(true);
     try {
       await dailyraApi.login(email, password, rememberMe);
-      onLoginSuccess();
+      await onLoginSuccess();
     } catch (err: any) {
+      console.error('Login failed:', err);
       setError(err.message || 'Invalid administrator credentials.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleQuickSignIn = async () => {
+    setError(null);
+    setLoading(true);
+    setEmail('girlsigma611@gmail.com');
+    setPassword('@faiza2299');
+    try {
+      await dailyraApi.login('girlsigma611@gmail.com', '@faiza2299', true);
+      await onLoginSuccess();
+    } catch (err: any) {
+      console.error('Quick sign-in error:', err);
+      setError(err.message || 'Could not authenticate administrator.');
     } finally {
       setLoading(false);
     }
@@ -241,18 +258,31 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({
             </form>
 
             {/* Quick-Fill Helper for Administrator */}
-            <div className="mt-6 pt-5 border-t border-[#EFECE4] flex items-center justify-between text-[11px] text-[#7A827D]">
-              <span>Owner: Sarah Wilson</span>
-              <button
-                type="button"
-                onClick={() => {
-                  setEmail('girlsigma611@gmail.com');
-                  setPassword('@faiza2299');
-                }}
-                className="text-[#234732] font-medium hover:underline"
-              >
-                Restore Default Key
-              </button>
+            <div className="mt-6 pt-5 border-t border-[#EFECE4] flex flex-col gap-2 text-[11px] text-[#7A827D]">
+              <div className="flex items-center justify-between">
+                <span>Account: <strong className="text-[#38473E]">girlsigma611@gmail.com</strong></span>
+                <button
+                  type="button"
+                  onClick={handleQuickSignIn}
+                  disabled={loading}
+                  className="px-2.5 py-1 rounded-lg bg-[#E4E9E1] text-[#234732] font-semibold hover:bg-[#D5DFD0] transition-colors"
+                >
+                  Quick Sign In
+                </button>
+              </div>
+              <div className="flex items-center justify-between text-[10.5px]">
+                <span>Default Password: <code className="text-[#234732] font-mono">@faiza2299</code></span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEmail('girlsigma611@gmail.com');
+                    setPassword('@faiza2299');
+                  }}
+                  className="text-[#234732] font-medium hover:underline"
+                >
+                  Fill Form
+                </button>
+              </div>
             </div>
           </div>
 

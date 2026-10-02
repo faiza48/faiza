@@ -58,9 +58,11 @@ export default function App() {
       const data = await dailyraApi.getState();
       setState(data);
       setIsAuthenticated(true);
-    } catch {
+    } catch (err: any) {
+      console.error('Failed to load authenticated state:', err);
       setIsAuthenticated(false);
       setState(null);
+      throw err;
     } finally {
       setLoadingData(false);
     }
